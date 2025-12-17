@@ -68,7 +68,7 @@ jobs:
       # Paso 6: Subir la carpeta 'dist/' como artifact
       # GitHub Pages usará este artifact para publicar el sitio
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # La carpeta que contiene el sitio compilado
           path: ./dist
