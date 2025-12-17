@@ -1,6 +1,16 @@
 # CéspedPro Chile Astro
 
 ## GitHub Acction
+- astro.config.mjs
+```mjs
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  site: 'https://thenefelin.github.io',
+  base: '/cespedpro-astro',
+});
+```
+
 - [GitHub Actions Workflow](.github/workflows/deploy.yml)
 ```
 cespedpro-astro/
