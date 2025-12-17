@@ -9,7 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^9.0.2",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
     "daisyui": "^5.5.14",
