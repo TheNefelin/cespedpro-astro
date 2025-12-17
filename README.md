@@ -1,3 +1,23 @@
+# CéspedPro Chile Astro
+
+## GitHub Acction
+```
+cespedpro-astro/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── src/
+├── public/
+├── astro.config.mjs
+├── package.json
+└── ...
+```
+
+
+---
+---
+---
+
 # Astro Starter Kit: Basics
 
 ```sh
