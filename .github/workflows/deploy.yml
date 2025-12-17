@@ -6,29 +6,17 @@ on:
   # Se ejecuta cuando haces push a la rama master
   push:
     branches: [ master ]
-  # También se ejecuta cuando abres un pull request hacia master
-  pull_request:
-    branches: [ master ]
 
 # Permisos que necesita el workflow
 permissions:
-  # Leer el contenido del repositorio
   contents: read
-  # Escribir en GitHub Pages
   pages: write
-  # Usar identidad para autenticarse
   id-token: write
-
-# Evita que múltiples workflows se ejecuten simultáneamente
-# Si haces varios pushes rápido, espera a que termine uno antes de empezar otro
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 # Define los trabajos (jobs) que ejecutará el workflow
 jobs:
-  # Primer trabajo: construir el proyecto Astro
-  build:
+  # Trabajo: construir y desplegar el proyecto Astro
+  build-and-deploy:
     # Ejecuta en una máquina virtual con Ubuntu
     runs-on: ubuntu-latest
     
@@ -36,16 +24,16 @@ jobs:
     steps:
       # Paso 1: Descargar el código del repositorio
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Paso 2: Instalar Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           # Versión de Node.js a usar
-          node-version: 18
-          # Cachea las dependencias para builds más rápidas
-          cache: npm
+          node-version: '18'
+          # Cachea npm para builds más rápidas
+          cache: 'npm'
 
       # Paso 3: Instalar las dependencias del proyecto
       # Ejecuta: npm install
@@ -53,36 +41,18 @@ jobs:
         run: npm install
 
       # Paso 4: Hacer build del proyecto Astro
-      # Esto genera la carpeta 'dist/' con el sitio optimizado y listo para producción
-      - name: Build
+      # Esto genera la carpeta 'dist/' con el sitio optimizado
+      - name: Build Astro site
         run: npm run build
 
-      # Paso 6: Subir la carpeta 'dist/' como artifact
-      # GitHub Pages usará este artifact para publicar el sitio
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      # Paso 5: Subir el artifact para GitHub Pages
+      - name: Upload artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
         with:
           # La carpeta que contiene el sitio compilado
           path: ./dist
 
-  # Segundo trabajo: desplegar a GitHub Pages
-  deploy:
-    # Configuración del ambiente de deploy
-    environment:
-      name: github-pages
-      # URL donde estará disponible el sitio después del deploy
-      url: ${{ steps.deployment.outputs.page_url }}
-    
-    # Este trabajo solo se ejecuta si el job 'build' fue exitoso
-    needs: build
-    
-    # Ejecuta en una máquina virtual con Ubuntu
-    runs-on: ubuntu-latest
-    
-    # Pasos que ejecuta este trabajo
-    steps:
-      # Paso 1: Desplegar a GitHub Pages
-      # Toma el artifact (carpeta dist/) y lo publica en GitHub Pages
+      # Paso 6: Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
