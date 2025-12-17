@@ -1,5 +1,19 @@
 # CéspedPro Chile Astro
 
+## Deploy in Vercel
+```cmd
+npm install @astrojs/vercel
+```
+- astro.config.mjs
+```mjs
+import vercel from '@astrojs/vercel';
+
+export default defineConfig({
+  output: 'server', // Habilitar SSR
+  adapter: vercel(), // Usar el adaptador de Vercel
+});
+```
+
 ## GitHub Acction
 - astro.config.mjs
 ```mjs
