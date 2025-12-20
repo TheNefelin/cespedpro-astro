@@ -1,6 +1,17 @@
 # CéspedPro Chile Astro
 
 ## Deploy in Vercel
+### Option 1
+- vercel.json
+```json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro"
+}
+```
+
+### Option 2
 ```cmd
 npm install @astrojs/vercel
 ```
