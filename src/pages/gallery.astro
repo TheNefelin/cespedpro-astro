@@ -1,0 +1,274 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] min-h-[300px]" style="background-image:url('/img/background.jpg')">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-green-900/70"></div>
+      <div class="relative h-full flex items-center justify-center text-center text-white px-4">
+        <div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Galería</h1>
+          <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+            Nuestros trabajos hablan por sí solos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      
+      <!-- Filtros por Categoría -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="btn btn-success text-white">Todos</button>
+        <button class="btn btn-outline btn-success">Canchas de Pádel</button>
+        <button class="btn btn-outline btn-success">Canchas de Fútbol</button>
+        <button class="btn btn-outline btn-success">Jardines</button>
+        <button class="btn btn-outline btn-success">Antes y Después</button>
+      </div>
+
+      <!-- Grid de Galería -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Item 1 - Cancha Pádel -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
+              <img src="/img/icon01.png" class="w-32 h-32 opacity-50" alt="Pádel">
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-blue-800">Cancha de Pádel</h3>
+            <p class="text-gray-600 text-sm">Mantención completa - Santiago</p>
+          </div>
+        </div>
+
+        <!-- Item 2 - Cancha Fútbol -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-green-300 to-green-500 flex items-center justify-center">
+              <img src="/img/icon02.png" class="w-32 h-32 opacity-50" alt="Fútbol">
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-green-800">Cancha de Fútbol</h3>
+            <p class="text-gray-600 text-sm">Limpieza profunda - Viña del Mar</p>
+          </div>
+        </div>
+
+        <!-- Item 3 - Jardín -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-emerald-300 to-emerald-500 flex items-center justify-center">
+              <img src="/img/icon03.png" class="w-32 h-32 opacity-50" alt="Jardín">
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-emerald-800">Jardín Residencial</h3>
+            <p class="text-gray-600 text-sm">Desinfección y limpieza - Valparaíso</p>
+          </div>
+        </div>
+
+        <!-- Item 4 - Antes/Después Pádel -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full grid grid-cols-2">
+              <div class="bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                <span class="text-white font-bold text-xl">ANTES</span>
+              </div>
+              <div class="bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                <span class="text-white font-bold text-xl">DESPUÉS</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-gray-800">Antes y Después</h3>
+            <p class="text-gray-600 text-sm">Recuperación de cancha - Concepción</p>
+          </div>
+        </div>
+
+        <!-- Item 5 - Cancha Fútbol 2 -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+              <img src="/img/icon02.png" class="w-32 h-32 opacity-50" alt="Fútbol">
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-green-800">Cancha Profesional</h3>
+            <p class="text-gray-600 text-sm">Mantención mensual - La Serena</p>
+          </div>
+        </div>
+
+        <!-- Item 6 - Jardín Pet Friendly -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-teal-300 to-teal-500 flex items-center justify-center">
+              <div class="text-center">
+                <img src="/img/icon03.png" class="w-32 h-32 opacity-50 mx-auto mb-2" alt="Jardín">
+                <span class="text-white text-4xl">🐾</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-teal-800">Jardín Pet Friendly</h3>
+            <p class="text-gray-600 text-sm">Desinfección especial - Rancagua</p>
+          </div>
+        </div>
+
+        <!-- Item 7 - Cancha Pádel 2 -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-indigo-300 to-indigo-500 flex items-center justify-center">
+              <img src="/img/icon01.png" class="w-32 h-32 opacity-50" alt="Pádel">
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-indigo-800">Club Deportivo</h3>
+            <p class="text-gray-600 text-sm">Mantención integral - Temuco</p>
+          </div>
+        </div>
+
+        <!-- Item 8 - Antes/Después Jardín -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full grid grid-cols-2">
+              <div class="bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center">
+                <span class="text-white font-bold text-xl">ANTES</span>
+              </div>
+              <div class="bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+                <span class="text-white font-bold text-xl">DESPUÉS</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-gray-800">Transformación Total</h3>
+            <p class="text-gray-600 text-sm">Jardín residencial - Iquique</p>
+          </div>
+        </div>
+
+        <!-- Item 9 - Cancha Multiuso -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all overflow-hidden group">
+          <figure class="relative h-80 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-orange-300 to-orange-500 flex items-center justify-center">
+              <div class="flex gap-4">
+                <img src="/img/icon01.png" class="w-24 h-24 opacity-50" alt="Multiuso">
+                <img src="/img/icon02.png" class="w-24 h-24 opacity-50" alt="Multiuso">
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <button class="btn btn-circle btn-lg bg-white text-black">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-orange-800">Cancha Multiuso</h3>
+            <p class="text-gray-600 text-sm">Restauración completa - Antofagasta</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Final -->
+      <section class="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl shadow-xl p-12 text-center text-white mt-16">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">¿Quieres que tu espacio luzca así?</h3>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Contáctanos y transforma tu cancha o jardín en un espacio impecable
+        </p>
+        <button class="btn btn-success btn-lg rounded-full text-white hover:scale-105 transition-transform">
+          Solicita tu presupuesto GRATIS
+        </button>
+      </section>
+
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Script para filtros (opcional - puedes implementarlo después)
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.btn-outline, .btn-success');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('btn-success', 'text-white');
+          btn.classList.add('btn-outline', 'btn-success');
+        });
+        button.classList.remove('btn-outline');
+        button.classList.add('btn-success', 'text-white');
+      });
+    });
+  });
+</script>

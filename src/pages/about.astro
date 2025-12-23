@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] min-h-[300px]" style="background-image:url('/img/background.jpg')">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-green-900/70"></div>
+      <div class="relative h-full flex items-center justify-center text-center text-white px-4">
+        <div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Quiénes Somos</h1>
+          <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+            Especialistas en mantención de pasto sintético
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-6xl mx-auto px-4 py-16 space-y-16">
+      
+      <!-- Introducción -->
+      <section class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+            Somos una empresa especializada en la mantención y cuidado de pasto sintético, comprometida con la calidad, la durabilidad y la estética de tus espacios. Creemos en soluciones prácticas y sostenibles que aporten comodidad, belleza y respeto por el medioambiente, creando áreas seguras y amigables para las personas y sus mascotas.
+          </p>
+        </div>
+      </section>
+
+      <!-- Misión, Visión, Expectativas -->
+      <section class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Misión -->
+        <div class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <img src="/img/icon01.png" class="w-10 h-10" alt="Misión">
+          </div>
+          <h2 class="text-2xl font-bold text-green-800 mb-4">Misión</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Brindar un servicio integral de mantención de pasto sintético, asegurando su óptimo estado y prolongando su vida útil. Nuestro compromiso es ofrecer espacios limpios, seguros y funcionales, contribuyendo al bienestar de nuestros clientes y al cuidado del entorno.
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+            <img src="/img/icon02.png" class="w-10 h-10" alt="Visión">
+          </div>
+          <h2 class="text-2xl font-bold text-blue-800 mb-4">Visión</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Ser la empresa líder en mantenciones de pasto sintético en la región, reconocida por su excelencia, innovación y responsabilidad ambiental, creando áreas verdes artificiales que mejoren la calidad de vida y fomenten la convivencia pet friendly.
+          </p>
+        </div>
+
+        <!-- Qué Esperamos -->
+        <div class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+            <img src="/img/icon03.png" class="w-10 h-10" alt="Expectativas">
+          </div>
+          <h2 class="text-2xl font-bold text-emerald-800 mb-4">Qué Esperamos</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Esperamos convertirnos en tu aliado estratégico para mantener tus espacios verdes impecables, reduciendo el consumo de agua y promoviendo soluciones sostenibles. Queremos que cada proyecto refleje nuestro compromiso con la calidad, la estética y el respeto por el medioambiente.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Valores / Eslogan -->
+      <section class="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl shadow-xl p-8 md:p-12 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Nuestros Valores</h2>
+        <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <p class="text-lg font-medium">✓ Mantenciones que cuidan tu espacio y el planeta</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <p class="text-lg font-medium">✓ Pasto sintético, vida natural</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <p class="text-lg font-medium">✓ Tu área verde siempre perfecta, sin gastar agua</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+            <p class="text-lg font-medium">✓ Espacios verdes, mascotas felices</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Final -->
+      <section class="text-center py-8">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">¿Listo para transformar tu espacio?</h3>
+        <button class="btn btn-success btn-lg rounded-full text-white hover:bg-green-700">
+          Solicita tu presupuesto GRATIS
+        </button>
+      </section>
+
+    </div>
+  </div>
+</Layout>

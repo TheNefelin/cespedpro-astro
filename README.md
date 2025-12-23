@@ -42,10 +42,26 @@ cespedpro-astro/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml
-├── src/
 ├── public/
+│   └── img/
+├── src/
+│   ├── assets
+│   │   └── app.css
+│   ├── components
+│   │   ├── Hero.astro
+│   │   └── NavBar.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       ├── about.astro
+│       ├── gallery.astro
+│       ├── index.astro
+│       └── services.astro
 ├── astro.config.mjs
 ├── package.json
+├── README.md
+├── tsconfig.json
+├── vercel.json
 └── ...
 ```
 

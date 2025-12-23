@@ -1,0 +1,178 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] min-h-[300px]" style="background-image:url('/img/background.jpg')">
+      <div class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-blue-900/70"></div>
+      <div class="relative h-full flex items-center justify-center text-center text-white px-4">
+        <div>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Nuestros Servicios</h1>
+          <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+            Cuidamos tu pasto sintético como si fuera natural
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-7xl mx-auto px-4 py-16 space-y-12">
+      
+      <!-- Introducción -->
+      <section class="text-center max-w-4xl mx-auto">
+        <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+          Ofrecemos soluciones que garantizan espacios verdes impecables, seguros y duraderos. Nuestro compromiso es cuidar cada detalle para que disfrutes áreas limpias y funcionales, reduciendo el consumo de agua y promoviendo prácticas sostenibles.
+        </p>
+        <div class="badge badge-lg badge-success text-white mt-6">
+          🐾 Pet Friendly
+        </div>
+      </section>
+
+      <!-- Servicios Principales -->
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Servicio 1: Fútbol -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all">
+          <figure class="px-6 pt-6">
+            <div class="w-full h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center">
+              <img src="/img/icon02.png" class="w-24 h-24" alt="Fútbol">
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-green-800">Canchas de Fútbol Sintéticas</h2>
+            <p class="text-gray-600">
+              Limpieza profunda, cepillado, redistribución de arena y desinfección para garantizar un terreno seguro y en óptimas condiciones.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-success btn-sm text-white">Más información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 2: Pádel -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all">
+          <figure class="px-6 pt-6">
+            <div class="w-full h-48 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center">
+              <img src="/img/icon01.png" class="w-24 h-24" alt="Pádel">
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-blue-800">Canchas de Pádel</h2>
+            <p class="text-gray-600">
+              Lavado, desinfección y revisión del estado del pasto sintético para prolongar su vida útil y mantener el mejor rendimiento.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-info btn-sm text-white">Más información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Jardines -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all">
+          <figure class="px-6 pt-6">
+            <div class="w-full h-48 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-2xl flex items-center justify-center">
+              <img src="/img/icon03.png" class="w-24 h-24" alt="Jardines">
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-emerald-800">Jardines de Pasto Sintético</h2>
+            <p class="text-gray-600">
+              Limpieza, aspirado de residuos, control de olores y desinfección para mantener espacios impecables y libres de bacterias.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-success btn-sm text-white">Más información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Limpieza Profesional -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all">
+          <figure class="px-6 pt-6">
+            <div class="w-full h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center">
+              <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z"/>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-cyan-800">Limpieza y Desinfección Profesional</h2>
+            <p class="text-gray-600">
+              Eliminamos polvo, suciedad y microorganismos, asegurando áreas higiénicas y seguras para personas y mascotas.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-info btn-sm text-white">Más información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 5: Productos Especializados -->
+        <div class="card bg-white shadow-xl hover:shadow-2xl transition-all">
+          <figure class="px-6 pt-6">
+            <div class="w-full h-48 bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center">
+              <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z" clip-rule="evenodd"/>
+                <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"/>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-teal-800">Productos Especializados</h2>
+            <p class="text-gray-600">
+              Uso de productos ecológicos para desinfección y mantenimiento, cuidando el medioambiente y la salud de tus espacios.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-success btn-sm text-white">Más información</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Importancia del Mantenimiento -->
+      <section class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mt-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+          Importancia del Mantenimiento del Pasto Sintético
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- Canchas Deportivas -->
+          <div class="space-y-4">
+            <div class="w-full h-64 bg-gradient-to-br from-green-200 to-green-400 rounded-2xl flex items-center justify-center">
+              <span class="text-white text-lg font-semibold">[Cancha deportiva]</span>
+            </div>
+            <h3 class="text-2xl font-bold text-green-800">Canchas Deportivas</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Una superficie en buen estado ayuda a prevenir lesiones en los deportistas, evitando irregularidades y acumulación de suciedad que puedan comprometer el rendimiento y la seguridad.
+            </p>
+          </div>
+
+          <!-- Jardines -->
+          <div class="space-y-4">
+            <div class="w-full h-64 bg-gradient-to-br from-blue-200 to-blue-400 rounded-2xl flex items-center justify-center">
+              <span class="text-white text-lg font-semibold">[Jardín con pasto sintético]</span>
+            </div>
+            <h3 class="text-2xl font-bold text-blue-800">Jardines</h3>
+            <p class="text-gray-700 leading-relaxed">
+              La limpieza y desinfección reducen la presencia de bacterias y malos olores, creando espacios saludables para toda la familia y mascotas. El cuidado adecuado prolonga la vida útil del pasto.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Final -->
+      <section class="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl shadow-xl p-12 text-center text-white mt-16">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">¿Necesitas mantener tu pasto sintético?</h3>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Contáctanos hoy y recibe una evaluación gratuita de tu espacio
+        </p>
+        <button class="btn btn-success btn-lg rounded-full text-white hover:scale-105 transition-transform">
+          Solicita tu presupuesto GRATIS
+        </button>
+      </section>
+
+    </div>
+  </div>
+</Layout>
