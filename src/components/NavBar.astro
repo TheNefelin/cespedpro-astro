@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import imgBurger from "../assets/images/burger.png"
 import imgTiktok from "../assets/images/tiktok.png"
 import imgWhatsapp from "../assets/images/whatsapp.png"
 import imgFacebook from "../assets/images/facebook.png"
@@ -18,7 +19,7 @@ import imgInstagram from "../assets/images/instagram.png"
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-md btn-circle border-0 shadow-none bg-black/50 p-2 lg:hidden">
-        <img src="img/burger.png"/>
+        <Image src={imgBurger} alt="menú"/>
       </div>
       <ul
         tabindex="-1"
