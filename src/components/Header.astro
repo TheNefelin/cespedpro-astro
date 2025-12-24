@@ -1,0 +1,19 @@
+---
+const { 
+  title, 
+  subtitle, 
+  backgroundImage = '/img/background.jpg' 
+} = Astro.props;
+---
+
+<section class="relative h-[40vh] min-h-[300px]" style={`background-image:url('${backgroundImage}')`}>
+  <div class="absolute inset-0 bg-linear-to-br from-blue-900/70 to-green-900/70"></div>
+  <div class="relative h-full flex items-center justify-center text-center text-white px-4">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">{title}</h1>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+        {subtitle}
+      </p>
+    </div>
+  </div>
+</section>

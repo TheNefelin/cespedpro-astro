@@ -1,22 +1,16 @@
 ---
+import Header from "../components/Header.astro";
+import RequestQuote from "../components/RequestQuote.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <div class="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
     
-    <!-- Hero Section -->
-    <section class="relative h-[40vh] min-h-[300px]" style="background-image:url('/img/background.jpg')">
-      <div class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-blue-900/70"></div>
-      <div class="relative h-full flex items-center justify-center text-center text-white px-4">
-        <div>
-          <h1 class="text-5xl md:text-6xl font-bold mb-4">Nuestros Servicios</h1>
-          <p class="text-xl md:text-2xl max-w-3xl mx-auto">
-            Cuidamos tu pasto sintético como si fuera natural
-          </p>
-        </div>
-      </div>
-    </section>
+    <Header 
+      title="Nuestros Servicios"
+      subtitle="Cuidamos tu pasto sintético como si fuera natural"
+    />
 
     <!-- Contenido Principal -->
     <div class="max-w-7xl mx-auto px-4 py-16 space-y-12">
@@ -161,17 +155,12 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
       </section>
-
-      <!-- CTA Final -->
-      <section class="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl shadow-xl p-12 text-center text-white mt-16">
-        <h3 class="text-3xl md:text-4xl font-bold mb-6">¿Necesitas mantener tu pasto sintético?</h3>
-        <p class="text-xl mb-8 max-w-2xl mx-auto">
-          Contáctanos hoy y recibe una evaluación gratuita de tu espacio
-        </p>
-        <button class="btn btn-success btn-lg rounded-full text-white hover:scale-105 transition-transform">
-          Solicita tu presupuesto GRATIS
-        </button>
-      </section>
+      
+      <RequestQuote
+        title="¿Necesitas mantener tu pasto sintético?"
+        subtitle="Contáctanos hoy y recibe una evaluación gratuita de tu espacio"
+        btnText="Solicita tu presupuesto GRATIS"
+      />
 
     </div>
   </div>
